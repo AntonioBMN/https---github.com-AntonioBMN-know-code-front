@@ -1,0 +1,19 @@
+.input-text {
+    margin-left: 15px;
+    width: 30%;
+}
+
+.border-red {
+    border: 1px solid red;
+}
+
+.invalid {
+    color: red;    
+    top: -15px;
+    position: relative;
+
+}
+
+.ml-3 {
+    margin-left: 10px;
+}
