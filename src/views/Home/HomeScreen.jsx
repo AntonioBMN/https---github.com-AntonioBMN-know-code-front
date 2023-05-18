@@ -38,7 +38,6 @@ export function HomeScreen() {
 
   const handleButtonPress = async () => {
     setErrors("");
-    setLoading(true);
     if (
       object[object.length - 1].file === "" ||
       object[object.length - 1].word === ""
@@ -46,6 +45,8 @@ export function HomeScreen() {
       setErrors("Verifique se anexou o arquivo ou se escreveu a palavra.");
       return;
     }
+    setLoading(true);
+
     const mount = [];
 
     const response = await countOccourrences(object);
@@ -131,6 +132,7 @@ export function HomeScreen() {
             <button
               type="button"
               className="btn btn-dark"
+              disabled={loading && "true"}
               onClick={handleButtonPress}
             >
               {loading ? (
