@@ -17,3 +17,8 @@
 .ml-3 {
     margin-left: 10px;
 }
+
+.loading-icon {
+    max-height: 24px;
+    max-width: 51px;
+}
